@@ -11,8 +11,7 @@ $(document).ready(function(){
 	
 	$('#wall').facebookWall({
 		id:'smashmag',
-		access_token:'CAACEdEose0cBAJJbWE6whA4Tlu3L8vaWNALKzEDIU89au0U75FCz75rzhN4DSwman2tndBmJaV8jxpqGEBdNhjuRaiBJKO8IBG9EVg1Bt3EZBUJZAlGnm3ZBBT3KH2X3m7KHUbcgZBxGPQJfR1wEckfYys1NwlAZD
-'
+		access_token:'CAACEdEose0cBAJJbWE6whA4Tlu3L8vaWNALKzEDIU89au0U75FCz75rzhN4DSwman2tndBmJaV8jxpqGEBdNhjuRaiBJKO8IBG9EVg1Bt3EZBUJZAlGnm3ZBBT3KH2X3m7KHUbcgZBxGPQJfR1wEckfYys1NwlAZD'
 	});
 
 });
