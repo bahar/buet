@@ -4,7 +4,7 @@
 }
 
 html{
-	background:url('../img/bg_tile.jpg');
+	background:url('../images/bg_tile.jpg');
 	border-top:12px solid #126c9a;
 }
 
@@ -54,7 +54,7 @@ h1 span{
 /* The wall post items */
 
 .facebookWall li{
-	background: url('../img/divider.png') no-repeat center bottom;
+	background: url('../images/divider.png') no-repeat center bottom;
 	list-style: none;
 	margin-bottom: 20px;
 	overflow: hidden;
@@ -143,19 +143,4 @@ a:hover{
 	position:absolute;
 	width:400px;
 	color:#eee;
-}
-
-#footer a.tzine,a.tzine:visited{
-	background:url("../img/tzine.png") no-repeat right top;
-	border:none;
-	text-decoration:none;
-	color:#FCFCFC;
-	font-size:12px;
-	height:70px;
-	left:50%;
-	line-height:31px;
-	margin:23px 0 0 110px;
-	position:absolute;
-	top:0;
-	width:290px;
 }

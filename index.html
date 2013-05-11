@@ -40,7 +40,7 @@
           <script id="feedTpl" type="text/x-jquery-tmpl">
           <li>
             <div class="status">
-              <h2><img src="https://graph.facebook.com/${from.id}/picture" class="avatar" /><a href="http://www.facebook.com/profile.php?id=${from.id}" target="_blank">${from.name}</a></h2>
+              <h2><img src="https://graph.facebook.com/${from.id}/picture" class="avatar" /> &nbsp;<a href="http://www.facebook.com/profile.php?id=${from.id}" target="_blank">${from.name}</a></h2>
               <p class="message">{{html message}}</p>
               {{if type == "link" }}
                 <div class="attachment">
