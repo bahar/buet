@@ -39,10 +39,8 @@
 
           <script id="feedTpl" type="text/x-jquery-tmpl">
           <li>
-            <img src="${from.picture}" class="avatar" />
-            
             <div class="status">
-              <h2><a href="http://www.facebook.com/profile.php?id=${from.id}" target="_blank">${from.name}</a></h2>
+              <h2><img src="https://graph.facebook.com/${from.id}/picture" class="avatar" /><a href="http://www.facebook.com/profile.php?id=${from.id}" target="_blank">${from.name}</a></h2>
               <p class="message">{{html message}}</p>
               {{if type == "link" }}
                 <div class="attachment">
@@ -60,7 +58,7 @@
             
             <p class="meta">${created_time} · 
             {{if comments}}
-              ${comments.count} Comment{{if comments.count>1}}s{{/if}}
+              ${comments.data.length} Comment{{if comments.data.length>1}}s{{/if}}
             {{else}}
               0 Comments
             {{/if}} · 
@@ -70,6 +68,7 @@
               0 Likes
             {{/if}}
             </p>
+            <p><a href="${actions[0].link}" target="_blank">Like!</a> | <a href="${actions[1].link}" target="_blank">Comment on this post</a></p>
             
           </li>
           </script>

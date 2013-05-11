@@ -11,7 +11,7 @@ $(document).ready(function(){
 	
 	$('#wall').facebookWall({
 		id:'368809433220789',
-		access_token:'CAACEdEose0cBAJJbWE6whA4Tlu3L8vaWNALKzEDIU89au0U75FCz75rzhN4DSwman2tndBmJaV8jxpqGEBdNhjuRaiBJKO8IBG9EVg1Bt3EZBUJZAlGnm3ZBBT3KH2X3m7KHUbcgZBxGPQJfR1wEckfYys1NwlAZD'
+		access_token:'CAACEdEose0cBACFDCbidz0ilZAURUUZBUmulHZCP7CoIB8WIyqA0A7TPYx9zSsBWdxlr3CUzfHAf60tRg4c3AaWdWIYZCWhyZAuyveHneybNZCYPAf37k4Nze0cNJvYQoB84G52ZBa4RgCNvS9k9MlzMGzIRDv1OPoZD'
 	});
 
 });
@@ -65,7 +65,7 @@ $(document).ready(function(){
 
 				// Copying the user avatar to each post, so it is
 				// easier to generate the templates:
-				this.from.picture = fb.user.picture;
+				//this.from.picture = fb.user.picture;
 				
 				// Converting the created_time (a UNIX timestamp) to
 				// a relative time offset (e.g. 5 minutes ago):
