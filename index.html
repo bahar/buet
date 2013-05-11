@@ -28,9 +28,51 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-          <h1>buet</h1>
+          <div id="page">
 
-<p>Easy facebook group feed explorer for OverheardAtBUET</p>
+            <div id="wall" class="facebookWall"></div>
+
+          </div>
+
+          <script id="headingTpl" type="text/x-jquery-tmpl">
+          </script>
+
+          <script id="feedTpl" type="text/x-jquery-tmpl">
+          <li>
+            <img src="${from.picture}" class="avatar" />
+            
+            <div class="status">
+              <h2><a href="http://www.facebook.com/profile.php?id=${from.id}" target="_blank">${from.name}</a></h2>
+              <p class="message">{{html message}}</p>
+              {{if type == "link" }}
+                <div class="attachment">
+                  {{if picture}}
+                    <img class="picture" src="${picture}" />
+                  {{/if}}
+                  <div class="attachment-data">
+                    <p class="name"><a href="${link}" target="_blank">${name}</a></p>
+                    <p class="caption">${caption}</p>
+                    <p class="description">${description}</p>
+                  </div>
+                </div>
+              {{/if}}
+            </div>
+            
+            <p class="meta">${created_time} · 
+            {{if comments}}
+              ${comments.count} Comment{{if comments.count>1}}s{{/if}}
+            {{else}}
+              0 Comments
+            {{/if}} · 
+            {{if likes}}
+              ${likes.count} Like{{if likes.count>1}}s{{/if}}
+            {{else}}
+              0 Likes
+            {{/if}}
+            </p>
+            
+          </li>
+          </script>
         </section>
 
         <aside id="sidebar">
@@ -48,6 +90,9 @@
       </div>
     </div>
 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script src="javascripts/jquery.tmpl.min.js"></script>
+    <script src="javascripts/script.js"></script>
   
   </body>
 </html>

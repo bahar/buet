@@ -10,7 +10,7 @@ $(document).ready(function(){
 	// that you will need to generate as explained in the tutorial:
 	
 	$('#wall').facebookWall({
-		id:'smashmag',
+		id:'368809433220789',
 		access_token:'CAACEdEose0cBAJJbWE6whA4Tlu3L8vaWNALKzEDIU89au0U75FCz75rzhN4DSwman2tndBmJaV8jxpqGEBdNhjuRaiBJKO8IBG9EVg1Bt3EZBUJZAlGnm3ZBBT3KH2X3m7KHUbcgZBxGPQJfR1wEckfYys1NwlAZD'
 	});
 
@@ -42,7 +42,7 @@ $(document).ready(function(){
 		// Putting together the Facebook Graph API URLs:
 
 		var graphUSER = 'https://graph.facebook.com/'+options.id+'/?fields=name,picture&access_token='+options.access_token+'&callback=?',
-			graphPOSTS = 'https://graph.facebook.com/'+options.id+'/posts/?access_token='+options.access_token+'&callback=?&date_format=U&limit='+options.limit;
+			graphPOSTS = 'https://graph.facebook.com/'+options.id+'/feed/?access_token='+options.access_token+'&callback=?&date_format=U&limit='+options.limit;
 		
 		var wall = this;
 		
