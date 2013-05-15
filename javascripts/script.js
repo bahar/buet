@@ -4,14 +4,17 @@
 	in the tutorial.
 */
 
+var timesince = Math.round((new Date().getTime() - 30*60*1000)/1000); // posts from last 30 minutes
+
 $(document).ready(function(){
 
 	// Calling our plugin with a page id and an access token
 	// that you will need to generate as explained in the tutorial:
-	
+
 	$('#wall').facebookWall({
 		id:'368809433220789',
-		access_token:'CAACEdEose0cBACFDCbidz0ilZAURUUZBUmulHZCP7CoIB8WIyqA0A7TPYx9zSsBWdxlr3CUzfHAf60tRg4c3AaWdWIYZCWhyZAuyveHneybNZCYPAf37k4Nze0cNJvYQoB84G52ZBa4RgCNvS9k9MlzMGzIRDv1OPoZD'
+		access_token:'CAACEdEose0cBAMgtwOme8TT28QpRQbmKZCD6d42vmB5Fwgxq818HSZCrZAB9B7JsNx7vet5gNTn6GPuGCsfqn4smkouc5ZBNLrDRViuRPmGRnZCR8eY3udtWh80By6Fox4bq5WA8hGxMG0Okv1H4PGSIlXr4KEgwZD',
+		limit:'25'
 	});
 
 });
@@ -42,7 +45,7 @@ $(document).ready(function(){
 		// Putting together the Facebook Graph API URLs:
 
 		var graphUSER = 'https://graph.facebook.com/'+options.id+'/?fields=name,picture&access_token='+options.access_token+'&callback=?',
-			graphPOSTS = 'https://graph.facebook.com/'+options.id+'/feed/?access_token='+options.access_token+'&callback=?&date_format=U&limit='+options.limit;
+			graphPOSTS = 'https://graph.facebook.com/'+options.id+'/feed/?access_token='+options.access_token+'&callback=?&date_format=U&limit='+options.limit+'&since='+timesince;
 		
 		var wall = this;
 		
